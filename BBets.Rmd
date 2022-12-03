@@ -49,28 +49,37 @@ for(i in 1:40) {
   
 
 ```
-```{r}
-favstats(STeach)
-```
+
 
 
 
 
 ```{r}
 
-results<-numeric(100)
+RTeach <- array(1:100)
 for(i in 1:100){
-  results[i]=BrLw()
+  RTeach[i]=BrLw()
 }
 
-hist(results)
-summary(results)
+histogram(RTeach)
 ```
 
+
 ```{r}
-require(tigerstats)
-favstats(results)
+
+STeach <- array(1:200)
+for(i in 1:200){
+  STeach[i]=BrLw()
+}
+
+histogram(RTeach)
 ```
+
+
+
+
+
+
 
 
 
